@@ -21,7 +21,7 @@
 </head>
 <body>
 <h1>Riviera — Privacy Policy</h1>
-<p class="updated">Last updated: 12 June 2026</p>
+<p class="updated">Last updated: 28 August 2026</p>
 
 <p><strong>The short version: Riviera has no servers, no analytics, no trackers, and no advertising.
 Your data stays on your device and, if you enable sync, in your personal iCloud.
@@ -41,13 +41,33 @@ of its subsidiaries.</p>
 <tr><td>Fuel records, maintenance history, repairs, subscriptions, lease details</td><td>On device, plus your personal iCloud if you enable iCloud Sync</td><td>Entered by you. iCloud Sync is optional and uses your private iCloud container — the developer has no access to it.</td></tr>
 <tr><td>Backups you export</td><td>Wherever you choose to save them</td><td>Created only when you tap "Export Backup".</td></tr>
 <tr><td>Device location</td><td>Not stored</td><td>Used once at first login to suggest your country/language, and to show distances to fuel stations, chargers, and dealers. There is no background location tracking.</td></tr>
+<tr><td>Diagnostics log</td><td>On device only</td><td>The last 160 app events, the names of the last 24 screens you opened, your device model and screen size, and the app version. Redacted as it is written. See <a href="#diagnostics">Diagnostics</a>.</td></tr>
 </table>
+
+<h2 id="diagnostics">Diagnostics</h2>
+<p>Riviera keeps a diagnostics log on your device so that a problem can be understood without
+asking you to reproduce it. It contains the most recent 160 app events, the names of the last
+24 screens you opened, your device model and screen size, and the app version and build number.
+It also notes when the app launched or moved between the foreground and background.</p>
+
+<p><strong>This log never leaves your device unless you choose to send it.</strong> Riviera has no
+server and never uploads it. Both routes that can share it — <em>Export Redacted Diagnostics</em>
+and <em>Report a Problem</em> — show you the complete file first, so you read exactly what you are
+about to send before you send it, and where it goes is your choice.</p>
+
+<p>Before anything is written to the log, Riviera removes values that could identify you or your
+vehicle: e-mail addresses, passwords, authentication tokens, your VIN, account and person
+identifiers, GPS coordinates, saved document filenames, and the name you gave your car. Screen
+names are recorded, never their contents.</p>
+
+<p>You can read the log at any time in Settings → Help &amp; Support → Diagnostics Log, clear it
+from that screen, and Delete All My Data removes it along with everything else.</p>
 
 <h2>Where the app sends network requests</h2>
 <p>Riviera communicates only with:</p>
 <ul>
 <li><strong>Renault's official services</strong> (Gigya sign-in and the Kamereon vehicle API) — to operate your car's connected features;</li>
-<li><strong>Public data providers</strong> — fuel prices (national open-data services, Tankerkönig, PretCarburant.ro), EV chargers (Open Charge Map, OpenStreetMap), dealers (Renault's public dealer locator, Apple Maps, OpenStreetMap), weather (OpenWeather), and safety recalls. These requests contain coordinates of the searched map area, never your identity;</li>
+<li><strong>Public data providers</strong> — fuel prices (national open-data services, Tankerkönig, PretCarburant.ro), EV chargers (Open Charge Map, OpenStreetMap), dealers (Renault's public dealer locator, Apple Maps, OpenStreetMap), weather (Open-Meteo), and safety recalls. These requests contain coordinates of the searched map area, never your identity;</li>
 <li><strong>Apple services</strong> — Maps, iCloud, and push notifications, governed by Apple's privacy policy.</li>
 </ul>
 <p>There are no Riviera servers. No analytics, advertising, or tracking SDKs are embedded.
@@ -56,8 +76,9 @@ The app contains zero third-party code dependencies.</p>
 <h2>Your controls</h2>
 <ul>
 <li><strong>Delete everything:</strong> Settings → Privacy &amp; Security → Delete All My Data removes all
-local data, Keychain entries, widget data, and iCloud-synced files.</li>
-<li><strong>Export everything:</strong> Settings → Advanced → Export Backup produces a complete,
+local data, Keychain entries, widget data, the diagnostics log, your iCloud-synced files,
+and any Shared Garage copy held in CloudKit together with the invitation that gave access to it.</li>
+<li><strong>Export everything:</strong> Settings → Data &amp; Sync → Export Backup produces a complete,
 portable copy of your records.</li>
 <li><strong>iCloud Sync</strong> is opt-in and can be turned off at any time.</li>
 <li><strong>App Lock</strong> (Face ID / Touch ID / passcode) is available and optional.</li>
