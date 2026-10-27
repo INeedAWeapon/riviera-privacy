@@ -86,7 +86,7 @@ unlock reminders and alerts and whether that alert is switched on, the names and
 whether its lock and remote commands work, its last eight remote commands with their times, how many automatic Renault reads the app
 has made recently, and, in some event lines, the address path of a Renault request (with the VIN and account identifiers masked).</p>
 
-<p>Before an event is saved, Riviera removes anything that looks like an e-mail address, a VIN, a sign-in token or a coordinate pair, and any account or person
+<p>Before an event is saved, Riviera removes anything that looks like an e-mail address, a VIN, a sign-in token, a coordinate pair written with four or more decimals or a number labelled latitude or longitude, and any account or person
 identifier, whether labelled (such as accountId=) or part of a Renault web address. It also removes the name you gave the car that was selected when the app started, if that name is at least three characters long. A rename, switching to another car or a first
 sign-in is covered only after the app is restarted. The app never logs your password and is written to avoid logging names, places and street addresses. The removal above covers only the items it lists: it does not recognise other names, place names or street addresses, and because it works by pattern it cannot recognise free text, so read the file before you send it.</p>
 
